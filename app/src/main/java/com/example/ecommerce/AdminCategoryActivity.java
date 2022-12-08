@@ -45,7 +45,7 @@ public class AdminCategoryActivity extends AppCompatActivity {
                 //sending data to the AdminAddNewProductActivity (putExtra)
                 intent.putExtra("category", "tShirts");
                 startActivity(intent);
-                //test4
+                //test5
 
             }
         });

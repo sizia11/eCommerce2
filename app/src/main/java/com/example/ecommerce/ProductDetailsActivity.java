@@ -76,18 +76,24 @@ public class ProductDetailsActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         if(task.isSuccessful()){
-                            cartListRef.child("Admin View").child(Prevalent.currentOnlineUser.getPhone())
+                            //remove from here
+                            Toast.makeText(ProductDetailsActivity.this, "add to cart list", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(ProductDetailsActivity.this,HomeActivity.class);
+                            startActivity(intent);
+                            //to here (when finish testing)
+                            /**cartListRef.child("Admin View").child(Prevalent.currentOnlineUser.getPhone())
                                     .child("Products").child(productId).updateChildren(cartMap)
                                     .addOnCompleteListener(new OnCompleteListener<Void>() {
                                         @Override
                                         public void onComplete(@NonNull Task<Void> task) {
+
                                             if(task.isSuccessful()){
                                                 Toast.makeText(ProductDetailsActivity.this, "add to cart list", Toast.LENGTH_SHORT).show();
                                                 Intent intent = new Intent(ProductDetailsActivity.this,HomeActivity.class);
                                                 startActivity(intent);
                                             }
                                         }
-                                    });
+                                    });*/
                         }
                     }
                 });

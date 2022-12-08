@@ -46,6 +46,7 @@ public class AdminCategoryActivity extends AppCompatActivity {
                 intent.putExtra("category", "tShirts");
                 startActivity(intent);
                 //test2
+
             }
         });
 

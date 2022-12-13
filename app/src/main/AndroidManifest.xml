@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools" >
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
-    <application xmlns:tools="http://schemas.android.com/tools"
+    <application
+        xmlns:tools="http://schemas.android.com/tools"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -16,7 +17,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ECommerce"
         tools:replace="android:theme"
-        tools:targetApi="31">
+        tools:targetApi="31" >
+        <activity
+            android:name=".ConfirmFinalOrderActivity"
+            android:exported="false" />
         <activity
             android:name=".AdminNewOrdersActivity"
             android:exported="false" />
@@ -25,12 +29,12 @@
             android:exported="false" />
         <activity
             android:name=".ProductDetailsActivity"
-            android:exported="false">
+            android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity android:name=".SettinsActivity">
+        <activity android:name=".SettinsActivity" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -38,34 +42,34 @@
         <activity
             android:name=".HomeActivity"
             android:label="@string/title_activity_home"
-            android:theme="@style/Theme.ECommerce.NoActionBar">
+            android:theme="@style/Theme.ECommerce.NoActionBar" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity android:name=".AdminAddNewProductActivity">
+        <activity android:name=".AdminAddNewProductActivity" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity android:name=".AdminCategoryActivity">
+        <activity android:name=".AdminCategoryActivity" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity android:name=".RegisterActivity">
+        <activity android:name=".RegisterActivity" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity android:name=".LoginActivity">
+        <activity android:name=".LoginActivity" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
